@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!existingId || !cardType || !name || !terms) {
             alert('Please complete all fields and agree to the Terms and Conditions.');
-            e.preventDefault();
+            e.preventDefault(); // Prevent redirection to the Thank You page
         }
     });
 });

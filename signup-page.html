@@ -1,36 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="scripts.js"></script>
-</head>
-<body>
-    <div class="container">
-        <h1>Signup for a Debit Card</h1>
-        <form id="signup-form">
-            <label for="existing-id">Existing ID</label>
-            <input type="text" id="existing-id" name="existing-id" required>
+<form id="signup-form" action="thank-you.html" method="POST">
+    <label for="existing-id">Existing ID</label>
+    <input type="text" id="existing-id" name="existing-id" required>
 
-            <label for="card-type">Choose Type</label>
-            <select id="card-type" name="card-type" required>
-                <option value="" disabled selected>Select type</option>
-                <option value="silver">Silver</option>
-                <option value="platinum">Platinum</option>
-            </select>
+    <label for="card-type">Choose Type</label>
+    <select id="card-type" name="card-type" required>
+        <option value="" disabled selected>Select type</option>
+        <option value="silver">Silver</option>
+        <option value="platinum">Platinum</option>
+    </select>
 
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-            <div class="checkbox-container">
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
-            </div>
-
-            <button type="submit" class="cta-button">Submit Application</button>
-        </form>
+    <div class="checkbox-container">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
     </div>
-</body>
-</html>
+
+    <button type="submit" class="cta-button">Submit Application</button>
+</form>
