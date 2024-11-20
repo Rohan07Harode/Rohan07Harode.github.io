@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.getElementById('submit-button');
 
     submitButton.addEventListener('click', () => {
-        const existingId = document.getElementById('existing-id').value.trim();
+        const existingId = document.getElementById('ppid').value.trim();
         const cardType = document.getElementById('card-type').value.trim();
         const name = document.getElementById('name').value.trim();
         const terms = document.getElementById('terms').checked;
