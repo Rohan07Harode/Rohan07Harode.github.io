@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginButton = document.getElementById('login-button');
     if (loginButton) {
         loginButton.addEventListener('click', () => {
-            const userId = document.getElementById('user-id').value.trim();
+            const userId = document.getElementById('ppid').value.trim();
             const password = document.getElementById('password').value.trim();
 
             // Validate User ID format
