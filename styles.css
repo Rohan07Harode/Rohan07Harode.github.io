@@ -45,11 +45,22 @@ input, select {
     margin-right: 10px;
 }
 
-.cta-button {
+.apply-ppdc {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.submit-ppdc {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fffe;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
