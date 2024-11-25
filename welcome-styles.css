@@ -1,0 +1,80 @@
+/* Reset */
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Banner Container */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.banner-container img.active {
+    display: block;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Info Section */
+.info-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.info-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+.info-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
