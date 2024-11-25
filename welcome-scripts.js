@@ -1,8 +1,8 @@
 // List of banner images (Replace with your actual Adobe Stock image paths)
 const banners = [
-    'images/banner1.jpg', // Path to banner image 1
-    'images/banner2.jpg', // Path to banner image 2
-    'images/banner3.jpg'  // Path to banner image 3
+    'images/AdobeStock_165569117.jpeg', // Path to banner image 1
+    'images/AdobeStock_330412807.jpeg', // Path to banner image 2
+    'images/AdobeStock_306891269.jpeg'  // Path to banner image 3
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
