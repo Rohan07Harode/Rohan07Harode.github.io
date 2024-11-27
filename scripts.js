@@ -13,21 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Redirect to Signup Page with PPID in the URL
-            window.location.href = `signup-page.html?ppid=${encodeURIComponent(userId)}`;
+            // Store PPID in localStorage
+            localStorage.setItem('PPID', userId);
+
+            // Redirect to Signup Page
+            window.location.href = 'signup-page.html';
         });
     }
 
     // Signup Page Logic
-    const urlParams = new URLSearchParams(window.location.search);
     const ppidField = document.getElementById('ppid');
     if (ppidField) {
-        const ppid = urlParams.get('ppid');
-        if (ppid) {
-            ppidField.value = ppid; // Pre-populate PPID field
+        const storedPPID = localStorage.getItem('PPID');
+        if (storedPPID) {
+            ppidField.value = storedPPID; // Pre-populate PPID field
         } else {
             alert('PPID is missing. Please sign in again.');
-            window.location.href = 'login-page.html'; // Redirect if no PPID found
+            window.location.href = 'signup-page.html'; // Redirect if no PPID found
         }
     }
 
@@ -43,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Please complete all fields and agree to the Terms and Conditions.');
                 return;
             }
+
+            // Clear localStorage after successful submission
+            localStorage.removeItem('PPID');
 
             // Redirect to Thank You page on successful validation
             window.location.href = 'thank-you.html';
