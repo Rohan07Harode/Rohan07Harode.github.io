@@ -28,8 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (storedPPID) {
             ppidField.value = storedPPID; // Pre-populate PPID field
         } else {
-            alert('PPID is missing. Please sign in again.');
-            window.location.href = 'signup-page.html'; // Redirect if no PPID found
+            ppidField.value = "PP123";
         }
     }
 
