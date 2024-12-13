@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const terms = document.getElementById('terms').checked;
 
             // Validate form fields
-            if (!ppidField.value || !cardType || !name || !terms) {
+            if (!cardType || !name || !terms) {
                 alert('Please complete all fields and agree to the Terms and Conditions.');
                 return;
             }
