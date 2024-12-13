@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Signup Page Logic
-    const ppidField = document.getElementById('ppid');
+    /*
+	const ppidField = document.getElementById('ppid');
     if (ppidField) {
         const storedPPID = localStorage.getItem('PPID');
         if (storedPPID) {
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ppidField.value = "PP123";
         }
     }
+	*/
 
     const submitButton = document.getElementById('submit-button');
     if (submitButton) {
@@ -45,11 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Clear localStorage after successful submission
-            localStorage.removeItem('PPID');
-
             // Redirect to Thank You page on successful validation
             window.location.href = 'thank-you.html';
+
         });
     }
 });
