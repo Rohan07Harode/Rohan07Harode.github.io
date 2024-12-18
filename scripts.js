@@ -15,10 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Store PPID in localStorage
             localStorage.setItem('PPID', userId);
-			
-			function targetPageParams() {
-				return "profile.loggedIn=true";
-			}
+		
 
             // Redirect to Signup Page
             window.location.href = 'signup-page.html';
