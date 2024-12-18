@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Redirect to Signup Page
             window.location.href = 'signup-page.html';
+			
+
+        function targetPageParams() {
+          return "profile.loggedIn=true";
+        }
         });
     }
 
