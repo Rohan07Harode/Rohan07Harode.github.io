@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 
             // Redirect to Signup Page
-            window.location.href = 'welcome-page.html';
+            window.location.href = 'signup-page.html';
 			
 
         });
